@@ -6,7 +6,7 @@
 /*   By: gdaignea <gdaignea@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 16:29:38 by gdaignea          #+#    #+#             */
-/*   Updated: 2024/01/15 12:06:10 by gdaignea         ###   ########.fr       */
+/*   Updated: 2024/01/17 10:32:21 by gdaignea         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	set_index(t_stack *stack)
 	while (stack)
 	{
 		stack->index = i;
-		if (i < median)
+		if (i <= median)
 			stack->above_median = true;
 		else
 			stack->above_median = false;
